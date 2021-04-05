@@ -1,5 +1,8 @@
 {
   "scripts": {
+    "compile": "tsc -p tsconfig.json --pretty",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lc": "yarn lint --fix && yarn compile",
     "nuke": "rm -rf node_modules"
   },
   "dependencies": {
